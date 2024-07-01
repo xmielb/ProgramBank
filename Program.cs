@@ -9,7 +9,7 @@ class Program
 
         while (running)
         {
-            Console.WriteLine("\nWybierz opcję:");
+            Console.WriteLine("\nWybierz opcje:");
             Console.WriteLine("1. Sprawdź numer konta");
             Console.WriteLine("2. Sprawdź saldo");
             Console.WriteLine("3. Wpłać środki");
