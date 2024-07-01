@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Tworzenie nowego konta bankowego z początkowym saldem
         BankAccount myAccount = new BankAccount("123456789", 1000.00m);
         bool running = true;
 

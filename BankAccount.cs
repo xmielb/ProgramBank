@@ -2,30 +2,21 @@
 
 public class BankAccount
 {
-    // Prywatne właściwości
     private string accountNumber;
     private decimal balance;
-
-    // Konstruktor
     public BankAccount(string accountNumber, decimal initialBalance)
     {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
     }
-
-    // Metoda do pobierania numeru konta
     public string GetAccountNumber()
     {
         return accountNumber;
     }
-
-    // Metoda do pobierania bieżącego salda
     public decimal GetBalance()
     {
         return balance;
     }
-
-    // Metoda do dokonywania wpłat na konto
     public void Deposit(decimal amount)
     {
         if (amount > 0)
@@ -38,8 +29,6 @@ public class BankAccount
             Console.WriteLine("Kwota wpłaty musi być większa niż zero.");
         }
     }
-
-    // Metoda do dokonywania wypłat z konta (jeśli saldo jest wystarczające)
     public bool Withdraw(decimal amount)
     {
         if (amount > 0)
